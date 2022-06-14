@@ -29,6 +29,22 @@
    FROM `exams` 
    WHERE TIME(`hour`) > '14' AND  DATE(`date`) = '2020-06-20';
 
+   //SELECT * 
+   FROM `exams` 
+   WHERE `hour` > '14:00:00' AND `date` = '2020-06-20';//
+
+   //SELECT * 
+   FROM `exams` 
+   WHERE HOUR(`hour`) >= 14 AND `date` = '2020-06-20';//
+
+   //SELECT * 
+   FROM `exams` 
+   WHERE HOUR(`hour`) >= 14 
+   AND YEAR(`date`) = 2020
+   AND MONTH(`date`) = 6 
+   AND DAY(`date`) = 20;//
+
+
 
 6.SELECT * 
   FROM `degrees`
