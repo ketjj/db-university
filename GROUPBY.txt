@@ -1,0 +1,20 @@
+
+
+1. SELECT COUNT(*) AS `studenti_iscritti` , YEAR(`enrolment_date`) AS `AA`
+   FROM `students`
+   GROUP BY YEAR(`enrolment_date`);
+
+
+2. SELECT COUNT(*) , `office_address` AS `indirizzo_edificio`
+   FROM `teachers`
+   GROUP BY `indirizzo_edificio`;
+
+
+3. SELECT CEIL(AVG(`vote`)) AS `media_voti`, `exam_id`
+   FROM `exam_student`
+   GROUP BY `exam_id`;
+
+
+4. SELECT COUNT(*) AS `corsi_laurea`, `department_id`
+   FROM `degrees`
+   GROUP BY `department_id`
